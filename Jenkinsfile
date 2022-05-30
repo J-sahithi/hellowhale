@@ -32,7 +32,7 @@ pipeline {
     
       stage('Deploy to Cluster') {
           steps {
-            sh 'envsubst < ${WORKSPACE}/hellowhale.yaml | kubectl apply -f -'
+            sh 'envsubst < ${WORKSPACE}/hellowhale.yml | kubectl apply -f -'
           }
       }
 
