@@ -6,7 +6,7 @@ pipeline {
 
     stage('Checkout Source') {
       steps {
-        git url:'https://github.com/J-sahithi/hellowhale.git', branch:'master'
+        git url:'https://github.com/J-sahithi/hellowhale.git', branch:'$branch'
       }
     }
     
